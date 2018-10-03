@@ -20,14 +20,12 @@
     Disponibles
   </ion-card-header>
 
+  <button ion-button full color="secondary" (click)="crearArticulo()">Crear Articulo</button>
   <ion-list>
     <button ion-item (click)="mostrarArticulo(articulo.id)" *ngFor="let articulo of articulos">
       <ion-icon name="cart" item-start></ion-icon>
       {{articulo.titulo}}
     </button>
-
-    
-
   </ion-list>
 </ion-card>
 

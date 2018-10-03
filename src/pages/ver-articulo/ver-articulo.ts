@@ -75,4 +75,9 @@ export class VerArticuloPage {
   	
   }
 
+  editarArticulo(idArticuloEditar){
+    /*navegar entre paginas */
+    this.navCtrl.push('EditarArticuloPage',{id:idArticuloEditar});
+  }
+
 }

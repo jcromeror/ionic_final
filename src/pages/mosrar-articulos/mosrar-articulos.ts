@@ -52,4 +52,9 @@ export class MosrarArticulosPage {
 
   }
 
+  crearArticulo(){
+    this.navCtrl.push('CrearArticuloPage')
+
+  }
+
 }
