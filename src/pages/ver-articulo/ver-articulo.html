@@ -1,0 +1,33 @@
+<!--
+  Generated template for the VerArticuloPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Articulo</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-card>
+	
+	  <ion-card-header>
+	  	<!-- interpolacion de angular {{articulo.titulo}}-->
+	    {{articulo.titulo}}
+	  </ion-card-header>
+	
+	  <ion-card-content>
+	    <!-- interpolacion de angular {{articulo.contenido}}-->
+	    {{articulo.contenido}}
+	  </ion-card-content>
+	
+	</ion-card>
+	<button ion-button full color="dark">Editar</button>
+	<button ion-button full color="danger" (click)="eliminarArticulo()">Eliminar</button>
+
+</ion-content>

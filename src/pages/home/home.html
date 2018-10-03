@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <button *ngIf="login==false" ion-button full (click)="irA('IniciarSesionPage')">Iniciar Sesión</button>
+  
+  <button *ngIf="login==false" ion-button full (click)="irA('CrearCuentaPage')">Crear Usuario</button>
+
+  <button *ngIf="login==true" ion-button full (click)="irA('MosrarArticulosPage')">Articulos</button>
+
+  <button *ngIf="login==true" ion-button full (click)="desconectar()">Desconectar</button>
+
+</ion-content>
